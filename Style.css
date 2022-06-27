@@ -1,0 +1,144 @@
+#body1	{
+	background-image: url('background.jpg');
+	background-attachment: fixed;
+	background-repeat: no repeat;
+	background-size: cover;
+}
+
+#body2	{
+	background-image: url('background2.jpg');
+	background-attachment: fixed;
+	background-repeat: no repeat;
+	background-size: cover;
+}
+
+#body3	{
+	background-image: url('b3.jpg');
+	background-attachment: fixed;
+	background-repeat: no repeat;
+	background-size: cover;
+}
+
+#body4	{
+	background-image: url('b4.jfif');
+	background-attachment: fixed;
+	background-repeat: no repeat;
+	background-size: cover;
+}
+
+h1	{
+	color:black;
+	
+	font-family: verdana;
+	text-align: left;
+	
+
+}
+h2{
+	color: green;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+		
+h3 	{
+	color:blue;
+	
+	font-family: verdana;
+	text-align: left;
+	
+}
+
+p	{
+	font-family: verdana;
+	font-size: 14 px;
+	text-align: left;
+	
+}
+		
+address	{
+	font-family: verdana;
+	font-size: 14px;
+	color:pink;
+	text-align: left;
+	
+}
+		
+pre {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+				font-size: 18px;
+}
+		
+cite	{
+	color: blue:12px
+}
+
+bdo	{
+	font-size: 18px;color: green;
+}
+a:link	{
+	color:pink;
+	background-color: transparent;
+	text-decoration: none;
+} 
+
+a:visited	{
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover	{
+	color:blue;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}   
+
+img 
+{
+	border:2px solid black;
+}
+
+button {
+color: blue;
+font-family: verdana;
+font-size: 12px;
+border: 2px solid green;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 3px;
+	text-align: left;
+	border-spacing: 5px;
+}
+
+table {
+	width: 100%;
+}
+
+#t tr:nth-child(even) {
+	background-color: burlywood;
+}
+dt {
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+}
+ol{
+	list-style:n;
+}
+ul{
+	list-style-type: square	;
+}
+
+.class {
+	color: brown;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}

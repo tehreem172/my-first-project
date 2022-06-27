@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="device-width, initial-scale=1.0"/>
+    <title>HTML Id Attribute</title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <img src="w3school.png" alt="w3school" width="100%" height="auto"/>
+    <h1>HTML id Attribute</h1>
+    <pre>
+      The HTML<b> id </b>attribute is used to specify a unique id for an HTML element.
+
+      You cannot have more than one element with the same id in an HTML document.
+    </pre>
+    <h2>Using The id Attribute</h2>
+    <pre>
+      The<b> id </b>attribute specifies a unique id for an HTML element. The value of thef<b>id </b>attribute must be unique within the HTML document.
+
+    The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+    The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+    </pre>
+    <h2>Difference Between Class and ID</h2>
+    <pre>
+      A class name can be used by multipule HTML elements, while an id name must only be used HTML element with the page:
+    </pre>
+    <h2> HTML Bookmarks with ID and Links</h2>
+    <pre>
+      HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+
+      Bookmarks can be useful if your page is very long.
+
+      To use a bookmark, you must first create it, and then add a link to it.
+
+      Then, when the link is clicked, the page will scroll to the location with the bookmark.
+    </pre>
+    <h2>Using The id Attribute in JavaScript</h2>
+    <pre>
+      The <b>id </b>attribute can also be used by JavaScript to perform some tasks for that specific element.
+
+      JavaScript can access an element with a specific id with the<b> getElementById() </b>method:
+    </pre>
+    <h3>Example</h3>
+    <p id="myheader">hello world</p>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+      function displayResult() {
+        document.getElementById("myheader").innerHTML = "Have a nice day";
+      }
+    </script>
+
+  </body>
+</html>

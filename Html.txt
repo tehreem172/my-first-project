@@ -1,0 +1,10 @@
+<DOCTYPE! hmlt>
+<html>
+<head>
+	<title>CCTV</title>
+</head>
+	<body>
+		<h1 style="color:Green>This is my first page</h1>
+		<p>This is my first paraghraph</p>
+</body>
+</html>

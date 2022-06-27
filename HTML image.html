@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html Image</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body id="body3">
+    <h1>HTML Images</h1>
+    <pre>Images can improve the design and the appearance of a web page.</pre>
+    <h2>HTML Images syntax</h2>
+    <pre>
+      he HTML img tag is used to embed an image in a web page.
+
+      Images are not technically inserted into a web page; images are linked to web pages. The img tag creates a holding space for the referenced image.
+
+      The img tag is empty, it contains attributes only, and does not have a closing tag.
+
+      The img tag has two required attributes:
+
+          src - Specifies the path to the image
+          alt - Specifies an alternate text for the image
+    </pre>
+    <h2>The src Attribute</h2>
+    <pre style="background-image: url('Background2.jpg'); background-attachment: fixed; background-size: cover;">
+      The required src attribute specifies the path (URL) to the image.
+
+        Note: When a web page loads; it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore,
+        make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon.
+        The broken link icon and the alt text are shown if the browser cannot find the image.
+    </pre>
+    <h2>The alt Attribute</h2>
+    <pre>The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+      The value of the alt attribute should describe the image:
+    </pre>
+    <h2>Image Size - Width and Heith</h2>
+    <pre>You can use the style attribute to specify the width and height of an image.</pre>
+    <h2>Width and Height, or Style?</h2>
+    <pre>
+      The width, height, and style attributes are all valid in HTML.
+
+      However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+    </pre>
+    <h2>Images in Another Folder</h2>
+    <pre>If you have your images in a sub-folder, you must include the folder name in the src attribute:</pre>
+    <h2>Images on Another Server/Website</h2>
+    <pre>Some web sites points to an external image on another server.
+
+      To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+    </pre>
+    <h2>Animated Image</h2>
+    <pre>HTML allows animated GIFs:
+
+      Example
+      <img src="gif1.gif" alt="Gifimage" style="width:480px;height:480px;">
+
+    </pre>
+    <h2>Image as a Link</h2>
+    <pre>To use an image as a link, put the img tag inside the a tag:
+      <a href="http://www.youtube.com" target="_blank">
+        <img src="youtube2.jpg" style="width: 200px; height:100px;"></a>
+      </a>
+    </pre>
+    <h2>Image Floating</h2>
+    <pre>
+      Use the CSS property to let the image float to the right or left of a text:
+      <p><img src="smilyface.png" style="float:right;width: 42px;height: 42px;">The image will float to the right of the text</p>
+      <p><img src="smilyface.png" style="float:left;width: 42px;height: 42px;">The image will float to the left of the text</p>
+      
+    </pre>
+    <h1>HTML Image Maps</h1>
+    <pre>
+      With HTML image maps, you can create clickable areas on an image.
+
+    </pre>
+    <h2>Image Maps</h2>
+    <pre>
+      The HTML map tag defines an image map. An image map is an image with clickable ares. The ares are defined with on or more area tags>
+      Try to click on the computer, phone, or the cup of coffee in the image bellow:
+
+    </pre>
+    <img src="workplace.jpg" alt="Workplace" style="border: 2px solid black;" usemap="#workmap">
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html" target="_blank">
+      <area shape="rect" coords="290,172,333,,250" alt="Phone" href="phone.html" target="_blank">
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html" target="_blank">
+    </map><br>
+      <h1>HTML Background Images</h1>
+      <pre>A background image can be specified in any HTML element
+      <div style="background-image: url('background2.jpg'); width: 450px;height: 300px;" >
+        You can specify background images
+        for any visible HTML element.
+        In this example, the background image
+        is specified for a div element.
+        By default, the background-image
+        will repeat itself in the direction(s)
+        where it is smaller than the element
+        where it is specified. (Try resizing the
+        browser window to see how the
+        background image behaves.</div></pre>
+        <h2>Background Image on a Page</h2>
+        <pre>If you want entire page have background Image, you must specify background image in body tage.</pre>
+        <h2>Background Repeat</h2>
+        <pre>
+          If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the
+          end of the element:
+
+        </pre>
+        <h2>Background Cover</h2>
+        <pre>
+          If you want the background image to cover the entire element, you can set the background-size property to cover.
+
+          Also, to make sure the entire element is always covered, set the  <b>background-attachment</b> property to<b> fixed:</b>
+
+          This way, the background image will cover the entire element, with no stretching (the image will keep its original  proportions):
+        </pre>
+        <h2>Background Stretch</h2>
+        <pre>
+          If you want the background image to stretch to fit the entire element, you can set the <b>background-size</b> property to 100% 100%:
+        </pre>
+        <h1>The Picture Element</h1>
+        <pre>
+          The <b>picture</b>element allows you to display different pictures for different devices or screen sizes.
+        
+        </pre>
+        <h2>The HTML Picture Element</h2>
+        <pre>
+          The HTML<b>picture</b>element fives web developers more flexibility in specifying image resources.
+          The <b>picture</b> element contains one or more <b>source</b>elements, each refferring to different images through <b>source</b>
+          attribute. This way the browser can choose the image that best fits the current view and or devices.
+          Each <b>source</b> element has a <b>media</b> attribute that defices when the image is the most suitable.
+        </pre>
+          <picture>
+            <source media="(min-width: 650px)" srcset="car.jfif">
+              <source media="min-width: 665px)" srcset="bick.jpg">
+                <img src="bick2.jpg" style="width:auto;">
+          </picture>
+          <h2>When to use the Picture Element</h2>
+          <pre>
+            There are two main purposes for the <b>picture</b> element:
+          </pre>
+          <h3>1. Bandwidth</h3>
+          <pre>
+            If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <b>source</b>
+            element with matching attribute values, and ignore any of the following elements. 
+          </pre>
+          <h3>2. Format Support</h3>
+          <pre>
+            Some browser or device may not support all image formats. By using the <b>picture</b> element, you can add images of all formats, 
+            and the browser will use the first format it recognizes, and ignore any of the following elements.
+          
+          </pre>
+
+        
+        
+
+        
+    
+
+
+
+
+  
+
+  </body>
+</html>
